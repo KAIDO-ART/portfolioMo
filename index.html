@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="image">
+            <img src="skep22.png" alt="">
+        </div>
+        <div class="links">
+            <a href="" class="active">Home</a>
+            <a href="">About me</a>
+            <a href="">Project Designs</a>
+            <a href="">Github</a>
+        </div>
+        <div class="icon">
+            <i class='bx bx-menu nav-openbtn'></i>
+        </div>
+       </nav> 
+       <!-- about me -->
+<section class="about">
+    <div class="main-con">
+        <div class="first-con">
+            <img src="mo.png" alt="">
+        </div>
+        <div class="second-con">
+            <h3>My name is Muhammad and</h3>
+            <h2>I am a Frontend Web Designer</h2>
+            <a href="">contact me</a>
+        </div>
+    </div>
+</section>
+
+<!-- skills -->
+<section class="skills">
+    <div class="skill-detail">
+        <h2>My skills</h2>
+        <div class="first">
+            <img src="PngItem_5194865.png" alt="">
+            <p>I design websites using html css javascript and graphic designing</p>
+        </div>
+        <div class="second">
+            <img src="PngItem23.png" alt="">
+            <p>I also design websites using Wordpress</p>
+        </div>
+    </div>
+    <div class="skill-image">
+        <img src="sites.png" alt="">
+    </div>
+</section>
+
+<!-- recent project -->
+<section class="recent">
+    <div class="main-recent">
+        <h2>My recent Project</h2>
+
+        <div class="recent-image">
+            <img src="recent.png" alt="">
+        </div>
+
+        <div class="check-recent">
+            <a href="">Check Web design</a>
+            <a href="https://github.com/KAIDO-ART/flowers-e-commerce/tree/main">Check Github</a>
+        </div>
+    </div>
+</section>
+
+<div class="home">
+    <div class="discount">
+        <h2>Other projects</h2>
+    </div>
+    <div class="content-start">
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="sk3.JPG" alt="">
+            <div class="content-swipe">
+                <h2>calculator js</h2>
+                <a href="https://github.com/KAIDO-ART/calculator">View Github</a>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <img src="commerce.JPG" alt="">
+            <div class="content-swipe">
+                <h2>E-commerce</h2>
+                <a href="https://github.com/KAIDO-ART/sneak-commerce/tree/main">View Github</a>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <img src="blog.JPG" alt="">
+            <div class="content-swipe">
+                <h2>Blog site</h2>
+                <a href="https://github.com/KAIDO-ART/blog">View Github</a>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <img src="sk2.JPG" alt="">
+            <div class="content-swipe">
+                <h2>Quote generator</h2>
+                <a href="https://github.com/KAIDO-ART/quote-generator">View Github</a>
+            </div>
+        </div>
+        
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+   </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+     
+<script>
+ var swiper = new Swiper(".mySwiper", {
+   slidesPerView: 1,
+   spaceBetween: 30,
+   loop: true,
+   pagination: {
+     el: ".swiper-pagination",
+     clickable: true,
+   },
+   navigation: {
+     nextEl: ".swiper-button-next",
+     prevEl: ".swiper-button-prev",
+   },
+ });
+
+ $(document).ready(function(){
+            $('.nav-openbtn').click(function(){
+                $('.links').toggleClass('show')
+            })
+        })
+</script>
+
+
+</body>
+</html>
+
+
